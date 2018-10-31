@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDB56FF2189631500E59E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB56FE2189631500E59E0B /* AppDelegate.swift */; };
+		FDDB57012189631500E59E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57002189631500E59E0B /* ViewController.swift */; };
+		FDDB57042189631500E59E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDB57022189631500E59E0B /* Main.storyboard */; };
+		FDDB57072189631500E59E0B /* getPhoneMessages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57052189631500E59E0B /* getPhoneMessages.xcdatamodeld */; };
+		FDDB57092189631700E59E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDB57082189631700E59E0B /* Assets.xcassets */; };
+		FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */; };
+		FDDB57172189631700E59E0B /* getPhoneMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57162189631700E59E0B /* getPhoneMessagesTests.swift */; };
+		FDDB57222189631700E59E0B /* getPhoneMessagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57212189631700E59E0B /* getPhoneMessagesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDDB57132189631700E59E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDB56F32189631500E59E0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDB56FA2189631500E59E0B;
+			remoteInfo = getPhoneMessages;
+		};
+		FDDB571E2189631700E59E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDB56F32189631500E59E0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDB56FA2189631500E59E0B;
+			remoteInfo = getPhoneMessages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDB56FB2189631500E59E0B /* getPhoneMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getPhoneMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDB56FE2189631500E59E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDDB57002189631500E59E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDDB57032189631500E59E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDDB57062189631500E59E0B /* getPhoneMessages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = getPhoneMessages.xcdatamodel; sourceTree = "<group>"; };
+		FDDB57082189631700E59E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDDB570B2189631700E59E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDDB570D2189631700E59E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDB57122189631700E59E0B /* getPhoneMessagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getPhoneMessagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDB57162189631700E59E0B /* getPhoneMessagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPhoneMessagesTests.swift; sourceTree = "<group>"; };
+		FDDB57182189631700E59E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDB571D2189631700E59E0B /* getPhoneMessagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getPhoneMessagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDB57212189631700E59E0B /* getPhoneMessagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPhoneMessagesUITests.swift; sourceTree = "<group>"; };
+		FDDB57232189631700E59E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDDB56F82189631500E59E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB570F2189631700E59E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB571A2189631700E59E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDDB56F22189631500E59E0B = {
+			isa = PBXGroup;
+			children = (
+				FDDB56FD2189631500E59E0B /* getPhoneMessages */,
+				FDDB57152189631700E59E0B /* getPhoneMessagesTests */,
+				FDDB57202189631700E59E0B /* getPhoneMessagesUITests */,
+				FDDB56FC2189631500E59E0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDDB56FC2189631500E59E0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDB56FB2189631500E59E0B /* getPhoneMessages.app */,
+				FDDB57122189631700E59E0B /* getPhoneMessagesTests.xctest */,
+				FDDB571D2189631700E59E0B /* getPhoneMessagesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDDB56FD2189631500E59E0B /* getPhoneMessages */ = {
+			isa = PBXGroup;
+			children = (
+				FDDB56FE2189631500E59E0B /* AppDelegate.swift */,
+				FDDB57002189631500E59E0B /* ViewController.swift */,
+				FDDB57022189631500E59E0B /* Main.storyboard */,
+				FDDB57082189631700E59E0B /* Assets.xcassets */,
+				FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */,
+				FDDB570D2189631700E59E0B /* Info.plist */,
+				FDDB57052189631500E59E0B /* getPhoneMessages.xcdatamodeld */,
+			);
+			path = getPhoneMessages;
+			sourceTree = "<group>";
+		};
+		FDDB57152189631700E59E0B /* getPhoneMessagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDB57162189631700E59E0B /* getPhoneMessagesTests.swift */,
+				FDDB57182189631700E59E0B /* Info.plist */,
+			);
+			path = getPhoneMessagesTests;
+			sourceTree = "<group>";
+		};
+		FDDB57202189631700E59E0B /* getPhoneMessagesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDB57212189631700E59E0B /* getPhoneMessagesUITests.swift */,
+				FDDB57232189631700E59E0B /* Info.plist */,
+			);
+			path = getPhoneMessagesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDDB56FA2189631500E59E0B /* getPhoneMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDB57262189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessages" */;
+			buildPhases = (
+				FDDB56F72189631500E59E0B /* Sources */,
+				FDDB56F82189631500E59E0B /* Frameworks */,
+				FDDB56F92189631500E59E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = getPhoneMessages;
+			productName = getPhoneMessages;
+			productReference = FDDB56FB2189631500E59E0B /* getPhoneMessages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDDB57112189631700E59E0B /* getPhoneMessagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDB57292189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessagesTests" */;
+			buildPhases = (
+				FDDB570E2189631700E59E0B /* Sources */,
+				FDDB570F2189631700E59E0B /* Frameworks */,
+				FDDB57102189631700E59E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDB57142189631700E59E0B /* PBXTargetDependency */,
+			);
+			name = getPhoneMessagesTests;
+			productName = getPhoneMessagesTests;
+			productReference = FDDB57122189631700E59E0B /* getPhoneMessagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDDB571C2189631700E59E0B /* getPhoneMessagesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDB572C2189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessagesUITests" */;
+			buildPhases = (
+				FDDB57192189631700E59E0B /* Sources */,
+				FDDB571A2189631700E59E0B /* Frameworks */,
+				FDDB571B2189631700E59E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDB571F2189631700E59E0B /* PBXTargetDependency */,
+			);
+			name = getPhoneMessagesUITests;
+			productName = getPhoneMessagesUITests;
+			productReference = FDDB571D2189631700E59E0B /* getPhoneMessagesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDDB56F32189631500E59E0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = creativeApps;
+				TargetAttributes = {
+					FDDB56FA2189631500E59E0B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FDDB57112189631700E59E0B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FDDB56FA2189631500E59E0B;
+					};
+					FDDB571C2189631700E59E0B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FDDB56FA2189631500E59E0B;
+					};
+				};
+			};
+			buildConfigurationList = FDDB56F62189631500E59E0B /* Build configuration list for PBXProject "getPhoneMessages" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDDB56F22189631500E59E0B;
+			productRefGroup = FDDB56FC2189631500E59E0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDB56FA2189631500E59E0B /* getPhoneMessages */,
+				FDDB57112189631700E59E0B /* getPhoneMessagesTests */,
+				FDDB571C2189631700E59E0B /* getPhoneMessagesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDDB56F92189631500E59E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */,
+				FDDB57092189631700E59E0B /* Assets.xcassets in Resources */,
+				FDDB57042189631500E59E0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB57102189631700E59E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB571B2189631700E59E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDDB56F72189631500E59E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDB57012189631500E59E0B /* ViewController.swift in Sources */,
+				FDDB56FF2189631500E59E0B /* AppDelegate.swift in Sources */,
+				FDDB57072189631500E59E0B /* getPhoneMessages.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB570E2189631700E59E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDB57172189631700E59E0B /* getPhoneMessagesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDB57192189631700E59E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDB57222189631700E59E0B /* getPhoneMessagesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDDB57142189631700E59E0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDB56FA2189631500E59E0B /* getPhoneMessages */;
+			targetProxy = FDDB57132189631700E59E0B /* PBXContainerItemProxy */;
+		};
+		FDDB571F2189631700E59E0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDB56FA2189631500E59E0B /* getPhoneMessages */;
+			targetProxy = FDDB571E2189631700E59E0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDDB57022189631500E59E0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDB57032189631500E59E0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDB570B2189631700E59E0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDDB57242189631700E59E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDDB57252189631700E59E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDDB57272189631700E59E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDDB57282189631700E59E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDDB572A2189631700E59E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/getPhoneMessages.app/getPhoneMessages";
+			};
+			name = Debug;
+		};
+		FDDB572B2189631700E59E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/getPhoneMessages.app/getPhoneMessages";
+			};
+			name = Release;
+		};
+		FDDB572D2189631700E59E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = getPhoneMessages;
+			};
+			name = Debug;
+		};
+		FDDB572E2189631700E59E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BEBP2F8T9;
+				INFOPLIST_FILE = getPhoneMessagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhatIfApps.getPhoneMessagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = getPhoneMessages;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDDB56F62189631500E59E0B /* Build configuration list for PBXProject "getPhoneMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDB57242189631700E59E0B /* Debug */,
+				FDDB57252189631700E59E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDB57262189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDB57272189631700E59E0B /* Debug */,
+				FDDB57282189631700E59E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDB57292189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDB572A2189631700E59E0B /* Debug */,
+				FDDB572B2189631700E59E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDB572C2189631700E59E0B /* Build configuration list for PBXNativeTarget "getPhoneMessagesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDB572D2189631700E59E0B /* Debug */,
+				FDDB572E2189631700E59E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDDB57052189631500E59E0B /* getPhoneMessages.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDDB57062189631500E59E0B /* getPhoneMessages.xcdatamodel */,
+			);
+			currentVersion = FDDB57062189631500E59E0B /* getPhoneMessages.xcdatamodel */;
+			path = getPhoneMessages.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDDB56F32189631500E59E0B /* Project object */;
+}
