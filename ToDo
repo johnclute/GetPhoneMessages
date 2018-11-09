@@ -1,0 +1,23 @@
+ToDo
+add author credit link for 2 images, Trashcan and Information icon.
+Link is: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>Finished
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>get information popups working
+
+finished:
+got button helper class started
+displaying the information based on what key is pressed
+display correct lable message for selected button
+Need to finish setting user defaults for the keys, have it where it will work, just need to implement them.
+text
+getting buttons working and saving or displaying data
+load  field with correct number and code
+make sure button helper class is using the correct functions
+make sure when pressing the button either it saves the data or shows it depending on if the user default data has been saved or not
+delete button data based on what button was pressed is pressed after the delete key is pressed.
+display product information
+While loading defaults, get phone number to load properly, currently, it does not load whenthe app starts.
+get slider that a user can use to allow the app to dial out default number when the app starts
+load the first item as default this allows the user to press dial and start the phone call if they don't select automatically call message machine.
+
+

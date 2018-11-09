@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1E148B218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */; };
+		FD1E148D218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */; };
+		FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */; };
+		FD1E14AD218C0B7700A26CCB /* btnMsg1-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14AC218C0B7700A26CCB /* btnMsg1-3.png */; };
+		FD1E14AF218C0B8700A26CCB /* btnAux-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14AE218C0B8600A26CCB /* btnAux-3.png */; };
+		FD1E14B1218C0BB800A26CCB /* btnMsg2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */; };
+		FD58D84F218CD10F0022CE80 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = FD58D84E218CD10F0022CE80 /* ToDo */; };
+		FD58D852218CD1D20022CE80 /* btnAux.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D850218CD1D20022CE80 /* btnAux.png */; };
+		FD58D853218CD1D20022CE80 /* bin.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D851218CD1D20022CE80 /* bin.png */; };
+		FD58D855218CD2AC0022CE80 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D854218CD2AC0022CE80 /* information.png */; };
+		FD58D857218CD6E90022CE80 /* btnDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D856218CD6E90022CE80 /* btnDelete.png */; };
+		FD58D859218CF6AC0022CE80 /* messageButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */; };
+		FD8A03B32192206E0072A6D7 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A03B22192206E0072A6D7 /* utilities.swift */; };
+		FD9DEE9D219407D20063BB78 /* clear-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FD9DEE9C219407D10063BB78 /* clear-button.png */; };
+		FD9DEE9F219409660063BB78 /* if_delete_46795(1).png in Resources */ = {isa = PBXBuildFile; fileRef = FD9DEE9E219409660063BB78 /* if_delete_46795(1).png */; };
 		FDDB56FF2189631500E59E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB56FE2189631500E59E0B /* AppDelegate.swift */; };
 		FDDB57012189631500E59E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57002189631500E59E0B /* ViewController.swift */; };
 		FDDB57042189631500E59E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDB57022189631500E59E0B /* Main.storyboard */; };
@@ -35,6 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Phone_Shiny_Icon.svg.png"; sourceTree = "<group>"; };
+		FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80pxPhone_Shiny_Icon.png; sourceTree = "<group>"; };
+		FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnEmpty-3.png"; sourceTree = "<group>"; };
+		FD1E14AC218C0B7700A26CCB /* btnMsg1-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnMsg1-3.png"; sourceTree = "<group>"; };
+		FD1E14AE218C0B8600A26CCB /* btnAux-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnAux-3.png"; sourceTree = "<group>"; };
+		FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnMsg2-3.png"; sourceTree = "<group>"; };
+		FD58D84E218CD10F0022CE80 /* ToDo */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
+		FD58D850218CD1D20022CE80 /* btnAux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnAux.png; sourceTree = "<group>"; };
+		FD58D851218CD1D20022CE80 /* bin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bin.png; sourceTree = "<group>"; };
+		FD58D854218CD2AC0022CE80 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		FD58D856218CD6E90022CE80 /* btnDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnDelete.png; sourceTree = "<group>"; };
+		FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageButtonHelper.swift; sourceTree = "<group>"; };
+		FD8A03B22192206E0072A6D7 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		FD9DEE9C219407D10063BB78 /* clear-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear-button.png"; sourceTree = "<group>"; };
+		FD9DEE9E219409660063BB78 /* if_delete_46795(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "if_delete_46795(1).png"; sourceTree = "<group>"; };
 		FDDB56FB2189631500E59E0B /* getPhoneMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getPhoneMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDB56FE2189631500E59E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDB57002189631500E59E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +106,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1E1487218BBBBA00A26CCB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FD9DEE9E219409660063BB78 /* if_delete_46795(1).png */,
+				FD9DEE9C219407D10063BB78 /* clear-button.png */,
+				FD58D854218CD2AC0022CE80 /* information.png */,
+				FD58D856218CD6E90022CE80 /* btnDelete.png */,
+				FD58D851218CD1D20022CE80 /* bin.png */,
+				FD58D850218CD1D20022CE80 /* btnAux.png */,
+				FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */,
+				FD1E14AE218C0B8600A26CCB /* btnAux-3.png */,
+				FD1E14AC218C0B7700A26CCB /* btnMsg1-3.png */,
+				FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */,
+				FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */,
+				FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		FDDB56F22189631500E59E0B = {
 			isa = PBXGroup;
 			children = (
+				FD58D84E218CD10F0022CE80 /* ToDo */,
+				FD1E1487218BBBBA00A26CCB /* images */,
 				FDDB56FD2189631500E59E0B /* getPhoneMessages */,
 				FDDB57152189631700E59E0B /* getPhoneMessagesTests */,
 				FDDB57202189631700E59E0B /* getPhoneMessagesUITests */,
@@ -100,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				FDDB56FE2189631500E59E0B /* AppDelegate.swift */,
+				FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */,
+				FD8A03B22192206E0072A6D7 /* utilities.swift */,
 				FDDB57002189631500E59E0B /* ViewController.swift */,
 				FDDB57022189631500E59E0B /* Main.storyboard */,
 				FDDB57082189631700E59E0B /* Assets.xcassets */,
@@ -232,9 +285,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD58D853218CD1D20022CE80 /* bin.png in Resources */,
+				FD1E14AD218C0B7700A26CCB /* btnMsg1-3.png in Resources */,
+				FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */,
 				FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */,
+				FD58D857218CD6E90022CE80 /* btnDelete.png in Resources */,
+				FD1E14AF218C0B8700A26CCB /* btnAux-3.png in Resources */,
+				FD9DEE9D219407D20063BB78 /* clear-button.png in Resources */,
 				FDDB57092189631700E59E0B /* Assets.xcassets in Resources */,
+				FD1E148D218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png in Resources */,
+				FD1E14B1218C0BB800A26CCB /* btnMsg2-3.png in Resources */,
+				FD9DEE9F219409660063BB78 /* if_delete_46795(1).png in Resources */,
+				FD1E148B218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png in Resources */,
+				FD58D855218CD2AC0022CE80 /* information.png in Resources */,
+				FD58D84F218CD10F0022CE80 /* ToDo in Resources */,
 				FDDB57042189631500E59E0B /* Main.storyboard in Resources */,
+				FD58D852218CD1D20022CE80 /* btnAux.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDB57012189631500E59E0B /* ViewController.swift in Sources */,
+				FD8A03B32192206E0072A6D7 /* utilities.swift in Sources */,
+				FD58D859218CF6AC0022CE80 /* messageButtonHelper.swift in Sources */,
 				FDDB56FF2189631500E59E0B /* AppDelegate.swift in Sources */,
 				FDDB57072189631500E59E0B /* getPhoneMessages.xcdatamodeld in Sources */,
 			);
