@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+
+    
     var buttonClass = [buttonHelper]()
     var selectedButton = 0
 
@@ -28,8 +30,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblAuxMgs: UILabel!
     @IBOutlet weak var btnClearOutlet: UIButton!
     @IBOutlet weak var swtchCallWhenStarted: UISwitch!
+    @IBOutlet weak var btnDeleteMsgs: UIButton!
+    @IBOutlet weak var btnInfoTxtFields: UIButton!
+    @IBOutlet weak var btnAppInfo: UIButton!
+    
+    func resizeScreenObjects(_ screenWidth: CGFloat, _ screenHeight: CGFloat ) {
+        print("X = \(screenWidth) Y = \(screenHeight)")
+        print("Label Field Height = \(CGFloat(CGFloat(statusRatio) * screenHeight))")
+        print("Label Origin Height = \(lblDisplayStatus.frame.height)")
+        
+        lblDisplayStatus.frame = CGRect(x: lblDisplayStatus.frame.origin.x, y: lblDisplayStatus.frame.origin.y, width: lblDisplayStatus.frame.width, height: (CGFloat(statusRatio) * screenHeight))
+    }
     
     
+
     @IBAction func btnClearText(_ sender: Any) {
         txtMessageCode.text = ""
         txtMessageNumber.text = ""
@@ -195,6 +209,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        let screenSize = UIScreen.main.bounds
         super.viewDidLoad()
         createKeyPadDoneKey()
         selectedButton = 0
@@ -254,6 +269,7 @@ class ViewController: UIViewController {
         if swtchCallWhenStarted.isOn {
             self.getMessage(self)
         }
+        resizeScreenObjects(screenSize.width, screenSize.height)
     }
     
 
@@ -346,7 +362,6 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
     
     
 }

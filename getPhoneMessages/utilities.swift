@@ -8,6 +8,24 @@
 
 import Foundation
 
+let viewCalcWidth = 375.0
+let viewCalcHeight = 667.0
+let statusRatio = 30.0/viewCalcHeight
+let textFieldRatioHeight = Float(30.0/viewCalcHeight)
+let switchRatioWidth = 47.0/viewCalcWidth
+let switchRatioHeight = 31.0/viewCalcHeight
+let infoBtnRatioWidth = 33.0/viewCalcWidth
+let infoBtnRatioHeight = 33.0/viewCalcHeight
+let deleteRatioWidth = 44.0/viewCalcWidth
+let deleteRatioHeight = 44.0/viewCalcHeight
+let clearRationWidth = 54.0/viewCalcWidth
+let clearRatioHeight = 40.0/viewCalcHeight
+let btnMsgRatioWidth = 95.0/viewCalcWidth
+let btnMsgRatioHeight = 48.0/viewCalcHeight
+let lblMsgRatioHeight = 56.0/viewCalcHeight
+let headerRatioWidth = 140.0/viewCalcWidth
+let headerRatioHeight = 31.0/viewCalcHeight
+
 func setDefault(_ btnType: buttonHelper  ) {
     let valName1 = "\(btnType.getButtonType())Msg"
     let valName2 = "\(btnType.getButtonType())Code"
