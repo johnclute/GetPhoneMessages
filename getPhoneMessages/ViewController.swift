@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     var buttonClass = [buttonHelper]()
     var selectedButton = 0
-
+    var firstime = 0
+    
     @IBOutlet weak var txtMessageNumber: UITextField!
     
     @IBOutlet weak var txtMessageCode: UITextField!
@@ -209,10 +210,13 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        firstime += 1
+        
         let screenSize = UIScreen.main.bounds
         super.viewDidLoad()
         createKeyPadDoneKey()
         selectedButton = 0
+        
         
         let turnedOn = UserDefaults.standard.bool(forKey: "CallWhenStarted")
         swtchCallWhenStarted.setOn(turnedOn, animated: false)
@@ -265,11 +269,15 @@ class ViewController: UIViewController {
             buttonClass[selectedButton].setSelected(selected: true)
             lblHomeMsg.text = buttonClass[selectedButton].labelMessage()
         }
-
-        if swtchCallWhenStarted.isOn {
-            self.getMessage(self)
-        }
+        
         resizeScreenObjects(screenSize.width, screenSize.height)
+        
+        if swtchCallWhenStarted.isOn {
+            print("First Time - \(firstime)")
+            if firstime == 1 {
+                self.getMessage(self)
+            }
+        }
     }
     
 

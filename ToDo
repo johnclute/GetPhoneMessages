@@ -1,12 +1,7 @@
 ToDo
-add author credit link for 2 images, Trashcan and Information icon.
-Link is: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>Finished
+Hide passcode if the user wants.
+correct when you go into info screen it automatically tries to call when it gets back into the previous screen.  Set a counter to see if that will stop that.
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>get information popups working
-
-app icon <a href="https://www.freepik.com/free-photos-vectors/phone">Phone vector created by Freepik</a>
-blue icon <a href='https://www.freepik.com/free-vector/contact-icons-in-3d_831811.htm'>Designed by Layerace</a>
-yellow icon <a href="https://www.freepik.com/free-vector/yellow-phone-icon_810130.htm">Designed by Kreativkolors</a>
 
 finished:
 got button helper class started
@@ -23,5 +18,12 @@ display product information
 While loading defaults, get phone number to load properly, currently, it does not load whenthe app starts.
 get slider that a user can use to allow the app to dial out default number when the app starts
 load the first item as default this allows the user to press dial and start the phone call if they don't select automatically call message machine.
+add author credit link for 2 images, Trashcan and Information icon.
+Link is: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>Finished
 
+<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>get information popups working
 
+app icon <a href="https://www.freepik.com/free-photos-vectors/phone">Phone vector created by Freepik</a>
+blue icon <a href='https://www.freepik.com/free-vector/contact-icons-in-3d_831811.htm'>Designed by Layerace</a>
+yellow icon <a href="https://www.freepik.com/free-vector/yellow-phone-icon_810130.htm">Designed by Kreativkolors</a>
+created Help screen.
