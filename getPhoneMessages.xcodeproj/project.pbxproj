@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD09B91D219CA5070062E5B7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09B91C219CA5070062E5B7 /* InformationViewController.swift */; };
+		FD0C4EFF21AF7253002EA245 /* pencil-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0C4EFE21AF7253002EA245 /* pencil-2.png */; };
+		FD0C4F0121AFA26D002EA245 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */; };
 		FD1E148B218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */; };
 		FD1E148D218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */; };
 		FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		FD09B91C219CA5070062E5B7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		FD0C4EFE21AF7253002EA245 /* pencil-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil-2.png"; sourceTree = "<group>"; };
+		FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Phone_Shiny_Icon.svg.png"; sourceTree = "<group>"; };
 		FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80pxPhone_Shiny_Icon.png; sourceTree = "<group>"; };
 		FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnEmpty-3.png"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		FD1E1487218BBBBA00A26CCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C4EFE21AF7253002EA245 /* pencil-2.png */,
 				FD6D341A219CEECE003AC426 /* Icon-60@3x.png */,
 				FD58D854218CD2AC0022CE80 /* information.png */,
 				FD58D856218CD6E90022CE80 /* btnDelete.png */,
@@ -156,6 +161,7 @@
 				FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */,
 				FD8A03B22192206E0072A6D7 /* utilities.swift */,
 				FDDB57002189631500E59E0B /* ViewController.swift */,
+				FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */,
 				FDDB57022189631500E59E0B /* Main.storyboard */,
 				FDDB57082189631700E59E0B /* Assets.xcassets */,
 				FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */,
@@ -294,6 +300,7 @@
 				FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */,
 				FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */,
 				FD58D857218CD6E90022CE80 /* btnDelete.png in Resources */,
+				FD0C4EFF21AF7253002EA245 /* pencil-2.png in Resources */,
 				FD1E14AF218C0B8700A26CCB /* btnAux-3.png in Resources */,
 				FDDB57092189631700E59E0B /* Assets.xcassets in Resources */,
 				FD6D341B219CEECE003AC426 /* Icon-60@3x.png in Resources */,
@@ -332,6 +339,7 @@
 				FD8A03B32192206E0072A6D7 /* utilities.swift in Sources */,
 				FD58D859218CF6AC0022CE80 /* messageButtonHelper.swift in Sources */,
 				FDDB56FF2189631500E59E0B /* AppDelegate.swift in Sources */,
+				FD0C4F0121AFA26D002EA245 /* SecondViewController.swift in Sources */,
 				FDDB57072189631500E59E0B /* getPhoneMessages.xcdatamodeld in Sources */,
 				FD09B91D219CA5070062E5B7 /* InformationViewController.swift in Sources */,
 			);

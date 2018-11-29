@@ -1,7 +1,10 @@
 ToDo
 Hide passcode if the user wants.
 correct when you go into info screen it automatically tries to call when it gets back into the previous screen.  Set a counter to see if that will stop that.
+Not only can you get into your messages, however you can add codes to get into different function, or delete messages you don't want to hear.  All you have to do is add a pause then a delete, the pause is to get past the delete message and the delete code to delete the messages.  What I want to do is create an interface
+    that will allow people to add codes to delete messages and a number of messages.
 
+Create a new screen where I can delete a number of saved messages, this should be used on the fly, so when the user just happens to think that want to delete a number of saved messages then can just enter the data one time and do it.  It should contain Access Code, codes to get to messages you want to delete, number of seconds it needs between deletes, default it to 4 seconds, and number of messages it wants deleted, and code to delete the messages.   Normally I would use this on my cell message, it will help get rid of a lot of unwanted messages.
 
 finished:
 got button helper class started

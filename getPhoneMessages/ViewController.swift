@@ -35,6 +35,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnInfoTxtFields: UIButton!
     @IBOutlet weak var btnAppInfo: UIButton!
     
+    
+    @IBAction func createCmds(_ sender: Any) {
+        /*
+         Comment -
+         calling second contoller with present, need to instatiate it first so that it is in the same work space, and can share userdefault data
+         this way also I don't have to hard tie it together when from the story board.  I think I need to do this with the class I created for  buttons
+         that way I can use the same memory space.
+        */
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.present(next, animated: true, completion: nil)
+    }
+    
     func resizeScreenObjects(_ screenWidth: CGFloat, _ screenHeight: CGFloat ) {
         print("X = \(screenWidth) Y = \(screenHeight)")
         print("Label Field Height = \(CGFloat(CGFloat(statusRatio) * screenHeight))")
@@ -209,7 +221,20 @@ class ViewController: UIViewController {
         lblAuxMgs.text = buttonClass[2].labelMessage()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if let returnedCode: String = UserDefaults.standard.string(forKey: "newCode") {
+            txtMessageCode.text = returnedCode
+            print("Return Value: \(returnedCode)")
+
+        }
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
+        UserDefaults.standard.set(nil, forKey: "newCode")
         firstime += 1
         
         let screenSize = UIScreen.main.bounds
