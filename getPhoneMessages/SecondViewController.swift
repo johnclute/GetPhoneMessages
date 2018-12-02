@@ -15,22 +15,38 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtSecDelay: UITextField!
     @IBOutlet weak var txtActions: UITextField!
     @IBOutlet weak var txtRepeat: UITextField!
+    @IBOutlet weak var swtchWelcomeMsgDelay: UISwitch!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        swtchWelcomeMsgDelay.setOn(false, animated: false)
 
         createKeyPadDoneKey()
     }
-    
+    @IBAction func btnBack(_ sender: Any) {
+        UserDefaults.standard.set(nil, forKey: "newCode")
+        self.dismiss(animated: true, completion: nil)
+    }
 
+    @IBAction func btnCancelCode(_ sender: Any) {
+        UserDefaults.standard.set(nil, forKey: "newCode")
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    
     @IBAction func btnSaveCode(_ sender: Any) {
         var savedCode: String
         savedCode = ""
-        
+        var wlcmDelay = ""
         if let accessCode: String = txtAccessCode.text {
+            
+            if swtchWelcomeMsgDelay.isOn {
+                wlcmDelay = ",,,"
+            }
+
             if let navKeys: String = txtNavKeys.text {
-                savedCode = accessCode + navKeys
+                savedCode = accessCode + wlcmDelay + navKeys
             }
         }
         
@@ -62,8 +78,9 @@ class SecondViewController: UIViewController {
         
     }
     
+    
+    
     @objc func doneClicked() {
-        
         view.endEditing(true)
         return
         

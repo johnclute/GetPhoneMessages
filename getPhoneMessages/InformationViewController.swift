@@ -13,6 +13,14 @@ class InformationViewController: UIViewController {
 
     @IBOutlet weak var instrTextView: UITextView!
     
+    @IBAction func btnBack(_ sender: Any) {
+        /*
+           Found an interesting thing, if you have the button connected through the story board back to the calling view, it reloads everything, including viewdidload, however, if you dismiss it, then only viewdidappear runs.
+         That is why i'm dismissing this viewController, each time did it before, if the automatice selector was selected, it would try to make a call each time.  That was driving me crazy.
+        */
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func showAlert(_ msg: String ) {
         
         let alertController = UIAlertController(title: "CC 3.0 Attribution", message: msg, preferredStyle: .alert)

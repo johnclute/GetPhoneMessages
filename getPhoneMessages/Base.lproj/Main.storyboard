@@ -283,6 +283,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OperatorsBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-66-igt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.41133201120000001" green="0.53641051049999999" blue="0.52956515550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iL-Ep-sPp">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <constraints>
@@ -292,16 +296,12 @@
                                     <navigationItem title="My Messages Info..." id="LSZ-Ie-Rnf">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="31r-ti-ScD">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="Fye-hR-hLS"/>
+                                                <action selector="btnBack:" destination="f7l-3U-8EQ" id="Nke-Q2-c5s"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OperatorsBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-66-igt">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.41133201120000001" green="0.53641051049999999" blue="0.52956515550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYb-Ma-7QR">
                                 <rect key="frame" x="0.0" y="64" width="320" height="281"/>
                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.51957917939999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -451,7 +451,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                     <navigationItem title="Create a Command" id="XT2-dU-Qan">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="s6S-eK-DX7">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="rn5-wn-68w"/>
+                                                <action selector="btnBack:" destination="pOY-cA-fco" id="BhT-tf-PaB"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -477,77 +477,6 @@ To Get more tips go to Jericojones.com/mymessages.
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSS-Tx-HvP">
-                                <rect key="frame" x="253" y="180" width="51" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9aW-Gz-5eX"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jat-Pl-7Wb">
-                                <rect key="frame" x="158" y="218" width="146" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Quj-1j-m3S"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wPV-nv-8Cw"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay between messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yES-Qj-ipq">
-                                <rect key="frame" x="16" y="185" width="202" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="LZ3-b4-aqD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Sequence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kne-Rh-xun">
-                                <rect key="frame" x="16" y="223" width="134" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="G2I-PX-a3o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat how many times?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lX-lQ-v6q">
-                                <rect key="frame" x="16" y="262" width="207" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="jQ6-Fw-6Vf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="1" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ols-Gf-S5r">
-                                <rect key="frame" x="253" y="255" width="51" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.92811781059999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7iR-nc-qxE"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGv-RM-MxC">
-                                <rect key="frame" x="93" y="339" width="53" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="mZQ-UW-mNI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.91372549020000005" green="0.0" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Slc-4I-Tbd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tof-GK-Htk">
                                 <rect key="frame" x="158" y="346" width="4.5" height="21"/>
                                 <constraints>
@@ -558,8 +487,94 @@ To Get more tips go to Jericojones.com/mymessages.
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message Delay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgE-4w-Ebc">
+                                <rect key="frame" x="16" y="190" width="206" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="MPK-aF-Hr9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-5X-Jyy">
+                                <rect key="frame" x="253" y="180" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="eoS-QM-sUy"/>
+                                </constraints>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSS-Tx-HvP">
+                                <rect key="frame" x="253" y="220" width="51" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1cB-Ob-fkp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jat-Pl-7Wb">
+                                <rect key="frame" x="158" y="258" width="146" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Quj-1j-m3S"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wPV-nv-8Cw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay between messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yES-Qj-ipq">
+                                <rect key="frame" x="16" y="225" width="202" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="6Ue-D0-2k4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Sequence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kne-Rh-xun">
+                                <rect key="frame" x="16" y="263" width="134" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="G2I-PX-a3o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat how many times?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lX-lQ-v6q">
+                                <rect key="frame" x="16" y="302" width="207" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="jQ6-Fw-6Vf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="1" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ols-Gf-S5r">
+                                <rect key="frame" x="253" y="295" width="51" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.92811781059999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7iR-nc-qxE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGv-RM-MxC">
+                                <rect key="frame" x="93" y="345" width="53" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="mZQ-UW-mNI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.91372549020000005" green="0.0" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancelCode:" destination="pOY-cA-fco" eventType="touchUpInside" id="fVA-qy-qfa"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSU-HV-x3j">
-                                <rect key="frame" x="176" y="339" width="57" height="34"/>
+                                <rect key="frame" x="176" y="345" width="57" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="cwZ-OG-4WF"/>
                                 </constraints>
@@ -574,48 +589,55 @@ To Get more tips go to Jericojones.com/mymessages.
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yES-Qj-ipq" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="9Oe-HM-cZX"/>
-                            <constraint firstItem="yES-Qj-ipq" firstAttribute="top" secondItem="APv-xB-Ooi" secondAttribute="bottom" constant="13" id="CxX-lr-e9P"/>
+                            <constraint firstItem="yES-Qj-ipq" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="3de-Hy-Xes"/>
+                            <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="Dwn-5X-Jyy" secondAttribute="trailing" constant="18" id="9rO-Ti-YCS"/>
+                            <constraint firstItem="kne-Rh-xun" firstAttribute="top" secondItem="yES-Qj-ipq" secondAttribute="bottom" constant="16" id="APM-Rg-ko5"/>
                             <constraint firstItem="7zE-LS-BkK" firstAttribute="trailing" secondItem="fHE-bP-iQx" secondAttribute="trailing" id="ETU-N9-YT7"/>
-                            <constraint firstItem="CSU-HV-x3j" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="55" id="FW9-MS-2kl"/>
+                            <constraint firstItem="CSU-HV-x3j" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="21" id="FW9-MS-2kl"/>
                             <constraint firstItem="7zE-LS-BkK" firstAttribute="top" secondItem="fHE-bP-iQx" secondAttribute="top" id="GAE-R4-HwX"/>
                             <constraint firstItem="Ols-Gf-S5r" firstAttribute="leading" secondItem="5lX-lQ-v6q" secondAttribute="trailing" constant="30" id="JKM-Ca-nWJ"/>
+                            <constraint firstItem="nSS-Tx-HvP" firstAttribute="leading" secondItem="yES-Qj-ipq" secondAttribute="trailing" constant="35" id="Juz-6L-BIn"/>
                             <constraint firstItem="Xz0-WY-lDY" firstAttribute="top" secondItem="7zE-LS-BkK" secondAttribute="bottom" constant="40" id="KAC-Af-gKK"/>
-                            <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="nSS-Tx-HvP" secondAttribute="trailing" constant="16" id="KVe-Tc-G3d"/>
-                            <constraint firstItem="jGv-RM-MxC" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="55" id="R2w-N1-Hl7"/>
+                            <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="nSS-Tx-HvP" secondAttribute="trailing" constant="16" id="LTg-W4-0UU"/>
+                            <constraint firstItem="jGv-RM-MxC" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="21" id="R2w-N1-Hl7"/>
                             <constraint firstItem="tof-GK-Htk" firstAttribute="leading" secondItem="jGv-RM-MxC" secondAttribute="trailing" constant="12" id="RJ5-jy-KoC"/>
-                            <constraint firstItem="nSS-Tx-HvP" firstAttribute="top" secondItem="APv-xB-Ooi" secondAttribute="bottom" constant="8" id="Slh-ec-xwo"/>
                             <constraint firstItem="APv-xB-Ooi" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="T6j-vq-MdT"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="Ols-Gf-S5r" secondAttribute="trailing" constant="16" id="Tn7-0j-tgh"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="Xz0-WY-lDY" secondAttribute="trailing" constant="16" id="V5t-QD-kWe"/>
                             <constraint firstItem="jGv-RM-MxC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="93" id="Wgd-Uv-iJs"/>
+                            <constraint firstItem="Dwn-5X-Jyy" firstAttribute="leading" secondItem="XgE-4w-Ebc" secondAttribute="trailing" constant="31" id="XsO-qC-98r"/>
                             <constraint firstItem="tof-GK-Htk" firstAttribute="centerX" secondItem="ZMv-7u-0B2" secondAttribute="centerX" id="YHX-l6-LUy"/>
-                            <constraint firstItem="nSS-Tx-HvP" firstAttribute="leading" secondItem="yES-Qj-ipq" secondAttribute="trailing" constant="35" id="ZZS-yb-Mjb"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="APv-xB-Ooi" secondAttribute="trailing" constant="16" id="ZnM-Gi-vBo"/>
-                            <constraint firstItem="tof-GK-Htk" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="62" id="bJX-Qa-oD4"/>
+                            <constraint firstItem="tof-GK-Htk" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="22" id="bJX-Qa-oD4"/>
                             <constraint firstItem="CSU-HV-x3j" firstAttribute="leading" secondItem="tof-GK-Htk" secondAttribute="trailing" constant="13.5" id="bPm-XX-bOC"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="bottom" secondItem="fHE-bP-iQx" secondAttribute="bottom" id="bZy-d0-7Fo"/>
                             <constraint firstItem="Xz0-WY-lDY" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="ckN-XF-dz1"/>
-                            <constraint firstItem="jat-Pl-7Wb" firstAttribute="top" secondItem="nSS-Tx-HvP" secondAttribute="bottom" constant="8" id="dXT-Pc-8yq"/>
                             <constraint firstItem="kne-Rh-xun" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="enN-44-uCL"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="jat-Pl-7Wb" secondAttribute="trailing" constant="16" id="erf-wa-avk"/>
                             <constraint firstItem="5lX-lQ-v6q" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="ezP-mL-SDG"/>
-                            <constraint firstItem="kne-Rh-xun" firstAttribute="top" secondItem="yES-Qj-ipq" secondAttribute="bottom" constant="16" id="hjL-8u-6Wn"/>
+                            <constraint firstItem="nSS-Tx-HvP" firstAttribute="leading" secondItem="yES-Qj-ipq" secondAttribute="trailing" constant="35" id="fcS-EA-GN2"/>
                             <constraint firstItem="APv-xB-Ooi" firstAttribute="top" secondItem="Xz0-WY-lDY" secondAttribute="bottom" constant="8" id="iUv-9S-O1A"/>
+                            <constraint firstItem="nSS-Tx-HvP" firstAttribute="top" secondItem="Dwn-5X-Jyy" secondAttribute="bottom" constant="9" id="jAB-rN-M8m"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" id="kAy-mz-DEC"/>
-                            <constraint firstItem="Ols-Gf-S5r" firstAttribute="top" secondItem="jat-Pl-7Wb" secondAttribute="bottom" constant="8" id="lk6-A9-E1h"/>
+                            <constraint firstItem="XgE-4w-Ebc" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="lIw-lG-C7o"/>
+                            <constraint firstItem="yES-Qj-ipq" firstAttribute="top" secondItem="XgE-4w-Ebc" secondAttribute="bottom" constant="13" id="lb9-Wt-hS6"/>
+                            <constraint firstItem="Ols-Gf-S5r" firstAttribute="top" secondItem="jat-Pl-7Wb" secondAttribute="bottom" constant="7" id="lk6-A9-E1h"/>
+                            <constraint firstItem="Dwn-5X-Jyy" firstAttribute="top" secondItem="APv-xB-Ooi" secondAttribute="bottom" constant="8" id="mdb-Nb-fRN"/>
+                            <constraint firstItem="jat-Pl-7Wb" firstAttribute="top" secondItem="nSS-Tx-HvP" secondAttribute="bottom" constant="8" id="mjV-2I-9QL"/>
+                            <constraint firstItem="Dwn-5X-Jyy" firstAttribute="leading" secondItem="XgE-4w-Ebc" secondAttribute="trailing" constant="31" id="p6u-Y0-YoL"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="jat-Pl-7Wb" secondAttribute="trailing" constant="16" id="qh4-ND-mid"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="trailing" secondItem="fHE-bP-iQx" secondAttribute="trailing" id="qpv-4K-1h1"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CSU-HV-x3j" secondAttribute="trailing" constant="87" id="u9X-GB-x2P"/>
                             <constraint firstItem="7zE-LS-BkK" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" id="vKN-RP-F2c"/>
                             <constraint firstItem="5lX-lQ-v6q" firstAttribute="top" secondItem="jat-Pl-7Wb" secondAttribute="bottom" constant="14" id="w0f-sg-umI"/>
+                            <constraint firstItem="XgE-4w-Ebc" firstAttribute="top" secondItem="APv-xB-Ooi" secondAttribute="bottom" constant="18" id="wDx-X0-77T"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="top" secondItem="ZMv-7u-0B2" secondAttribute="top" id="wK5-cL-j7I"/>
-                            <constraint firstItem="jat-Pl-7Wb" firstAttribute="top" secondItem="nSS-Tx-HvP" secondAttribute="bottom" constant="8" id="yet-2v-lAl"/>
                             <constraint firstItem="jat-Pl-7Wb" firstAttribute="leading" secondItem="kne-Rh-xun" secondAttribute="trailing" constant="8" id="zrU-UB-r27"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fHE-bP-iQx"/>
                     </view>
                     <connections>
+                        <outlet property="swtchWelcomeMsgDelay" destination="Dwn-5X-Jyy" id="0ga-XC-TCd"/>
                         <outlet property="txtAccessCode" destination="Xz0-WY-lDY" id="4eb-mE-FRR"/>
                         <outlet property="txtActions" destination="jat-Pl-7Wb" id="Ufu-vv-ouR"/>
                         <outlet property="txtNavKeys" destination="APv-xB-Ooi" id="2UL-qU-Xm5"/>
@@ -637,7 +659,4 @@ To Get more tips go to Jericojones.com/mymessages.
         <image name="information.png" width="64" height="64"/>
         <image name="pencil-2.png" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Slc-4I-Tbd"/>
-    </inferredMetricsTieBreakers>
 </document>

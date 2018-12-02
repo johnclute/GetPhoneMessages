@@ -223,29 +223,38 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        if swtchCallWhenStarted.isOn {
+            print("First Time - \(firstime)")
+            if self.firstime == 0 {
+                self.getMessage(self)
+                self.firstime += 1
+                print("First Time - \(firstime)")
+
+            }
+        }
+        
         if let returnedCode: String = UserDefaults.standard.string(forKey: "newCode") {
             txtMessageCode.text = returnedCode
             print("Return Value: \(returnedCode)")
-
+            
         }
-        
-        
-        
+
     }
-    
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         UserDefaults.standard.set(nil, forKey: "newCode")
-        firstime += 1
         
         let screenSize = UIScreen.main.bounds
-        super.viewDidLoad()
+        resizeScreenObjects(screenSize.width, screenSize.height)
+
         createKeyPadDoneKey()
         selectedButton = 0
         
         
         let turnedOn = UserDefaults.standard.bool(forKey: "CallWhenStarted")
         swtchCallWhenStarted.setOn(turnedOn, animated: false)
-
+        
         for i in 0...2 {
             buttonClass.append(buttonHelper.init(btnNum: i))
             getDefaults( buttonClass[i])
@@ -258,7 +267,7 @@ class ViewController: UIViewController {
                     btnImg = UIImage(named: "btnEmpty-3.png")!
                 }
                 btnHome.setImage(btnImg, for: UIControl.State.normal)
-
+                
                 break
                 }
             case 1 : do {
@@ -268,7 +277,7 @@ class ViewController: UIViewController {
                     btnImg = UIImage(named: "btnEmpty-3.png")!
                 }
                 btnSecond.setImage(btnImg, for: UIControl.State.normal)
-            
+                
                 break
                 }
             case 2: do {
@@ -277,7 +286,7 @@ class ViewController: UIViewController {
                 } else {
                     btnImg = UIImage(named: "btnEmpty-3.png")!
                 }
-               
+                
                 btnAux.setImage(btnImg, for: UIControl.State.normal)
                 break
                 }
@@ -295,14 +304,6 @@ class ViewController: UIViewController {
             lblHomeMsg.text = buttonClass[selectedButton].labelMessage()
         }
         
-        resizeScreenObjects(screenSize.width, screenSize.height)
-        
-        if swtchCallWhenStarted.isOn {
-            print("First Time - \(firstime)")
-            if firstime == 1 {
-                self.getMessage(self)
-            }
-        }
     }
     
 
