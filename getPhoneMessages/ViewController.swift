@@ -31,10 +31,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblAuxMgs: UILabel!
     @IBOutlet weak var btnClearOutlet: UIButton!
     @IBOutlet weak var swtchCallWhenStarted: UISwitch!
+    @IBOutlet weak var swtchHidePassword: UISwitch!
     @IBOutlet weak var btnDeleteMsgs: UIButton!
     @IBOutlet weak var btnInfoTxtFields: UIButton!
     @IBOutlet weak var btnAppInfo: UIButton!
     
+    @IBAction func swtchPasswordChange(_ sender: Any) {
+        if swtchHidePassword.isOn {
+            txtMessageCode.isSecureTextEntry = true
+        } else {
+            txtMessageCode.isSecureTextEntry = false
+        }
+        
+    }
     
     @IBAction func createCmds(_ sender: Any) {
         /*
@@ -223,6 +232,17 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        swtchHidePassword.isOn = true
+        txtMessageCode.isSecureTextEntry = true
+        
+        let msgCmd = UserDefaults.standard.string(forKey: "msgCmd")
+        let msgRepeated = UserDefaults.standard.integer(forKey: "msgRepeated")
+        if msgRepeated != -1 {
+            let msg = "Repeating \(msgCmd ?? "-") command, \(msgRepeated) times!"
+            lblDisplayStatus.text = msg
+        }
+        
+        
         if swtchCallWhenStarted.isOn {
             print("First Time - \(firstime)")
             if self.firstime == 0 {
@@ -241,6 +261,10 @@ class ViewController: UIViewController {
 
     }
     override func viewDidLoad() {
+        let msgCmd: String = ""
+        let msgRepeated: Int = -1
+        UserDefaults.standard.set(msgRepeated, forKey: "msgRepeated")
+        UserDefaults.standard.set(msgCmd, forKey: "msgCmd")
         super.viewDidLoad()
         
         UserDefaults.standard.set(nil, forKey: "newCode")

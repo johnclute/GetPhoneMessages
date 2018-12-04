@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtActions: UITextField!
     @IBOutlet weak var txtRepeat: UITextField!
     @IBOutlet weak var swtchWelcomeMsgDelay: UISwitch!
+    @IBOutlet weak var lblStatusMessage: UILabel!
     
     
     override func viewDidLoad() {
@@ -24,6 +25,8 @@ class SecondViewController: UIViewController {
 
         createKeyPadDoneKey()
     }
+    
+    
     @IBAction func btnBack(_ sender: Any) {
         UserDefaults.standard.set(nil, forKey: "newCode")
         self.dismiss(animated: true, completion: nil)
@@ -37,6 +40,9 @@ class SecondViewController: UIViewController {
     
     @IBAction func btnSaveCode(_ sender: Any) {
         var savedCode: String
+        var msgCmd: String = ""
+        var msgRepeated: Int = 0
+        
         savedCode = ""
         var wlcmDelay = ""
         if let accessCode: String = txtAccessCode.text {
@@ -62,8 +68,12 @@ class SecondViewController: UIViewController {
         }
         if let actionSequence = txtActions.text {
             actionsTaken = actionsTaken + actionSequence
+            msgCmd = actionSequence
         }
         if let tmp1 = Int(txtRepeat.text!) {
+            msgRepeated = tmp1
+            UserDefaults.standard.set(msgRepeated, forKey: "msgRepeated")
+            UserDefaults.standard.set(msgCmd, forKey: "msgCmd")
             for _ in 0..<tmp1 {
                 savedCode = savedCode + actionsTaken
             }
@@ -73,12 +83,10 @@ class SecondViewController: UIViewController {
         print("\(savedCode)")
         
         UserDefaults.standard.set(savedCode, forKey: "newCode")
+        
         self.dismiss(animated: true, completion: nil)
         
-        
     }
-    
-    
     
     @objc func doneClicked() {
         view.endEditing(true)
