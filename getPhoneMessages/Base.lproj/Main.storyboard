@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.41133201120000001" green="0.53641051049999999" blue="0.52956515550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password for Messages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHt-SY-WTb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password for Messages" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SHt-SY-WTb">
                                 <rect key="frame" x="16" y="131" width="250" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                     <action selector="finishedEditingCode:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="G1T-7n-I1b"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number for Messages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3j-fh-7Hq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number for Messages" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q3j-fh-7Hq">
                                 <rect key="frame" x="16" y="84.5" width="288" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="height" constant="44" id="GjL-0x-CAq"/>
                                     <constraint firstAttribute="width" constant="44" id="vAJ-YA-UtQ"/>
                                 </constraints>
-                                <state key="normal" image="bin.png"/>
+                                <state key="normal" image="recycle-bin 1.png"/>
                                 <connections>
                                     <action selector="btnDeleteCallNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGi-3c-Lu9"/>
                                 </connections>
@@ -134,10 +134,9 @@
                                     <constraint firstAttribute="width" constant="33" id="GP3-nf-d0j"/>
                                     <constraint firstAttribute="height" constant="33" id="zZp-wr-cL2"/>
                                 </constraints>
-                                <state key="normal" image="information.png"/>
+                                <state key="normal" image="info-1.png"/>
                                 <connections>
                                     <action selector="btnAppInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWv-84-Les"/>
-                                    <segue destination="f7l-3U-8EQ" kind="show" id="uw3-eT-bRP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYA-NO-6PJ">
@@ -197,7 +196,7 @@
                                     <constraint firstAttribute="height" constant="40.5" id="leg-0f-joK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
-                                <state key="normal" title="Clear">
+                                <state key="normal" image="eraser-1.png">
                                     <color key="titleColor" red="0.226737380027771" green="0.42842388153076172" blue="0.93901830911636353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -307,7 +306,7 @@
         <!--Information View Controller-->
         <scene sceneID="B78-hl-rLF">
             <objects>
-                <viewController id="f7l-3U-8EQ" customClass="InformationViewController" customModule="getPhoneMessages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="infoWindow" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7l-3U-8EQ" customClass="InformationViewController" customModule="getPhoneMessages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9j6-n2-6TQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,67 +388,41 @@ To Get more tips go to Jericojones.com/mymessages.
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-Of-qYR">
-                                <rect key="frame" x="128" y="423" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="7TU-WH-Plm"/>
-                                    <constraint firstAttribute="width" constant="64" id="DA2-IW-GXN"/>
-                                </constraints>
-                                <state key="normal" image="bin.png"/>
-                                <connections>
-                                    <action selector="btnDisplayDeleteCC3:" destination="f7l-3U-8EQ" eventType="touchUpInside" id="4Vw-bU-z4t"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC 3.0 Attributions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-iT-0Tc">
+                                <rect key="frame" x="16" y="385" width="288" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7o-bB-c6k">
-                                <rect key="frame" x="249" y="427" width="55" height="56"/>
+                                <rect key="frame" x="132.5" y="424" width="55" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="HR4-pC-6Dd"/>
-                                    <constraint firstAttribute="height" constant="56" id="RRk-3T-wNg"/>
+                                    <constraint firstAttribute="height" constant="56" id="f9a-ZR-tKP"/>
+                                    <constraint firstAttribute="width" constant="55" id="lQM-zv-GYs"/>
                                 </constraints>
                                 <state key="normal" image="Icon-60.png"/>
                                 <connections>
                                     <action selector="btnDisplayAppIconCC3:" destination="f7l-3U-8EQ" eventType="touchUpInside" id="Zgt-6K-HNf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-a9-Re3">
-                                <rect key="frame" x="16" y="423" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="bu9-2d-eq9"/>
-                                    <constraint firstAttribute="width" constant="64" id="t0v-lO-Hoe"/>
-                                </constraints>
-                                <state key="normal" image="information.png"/>
-                                <connections>
-                                    <action selector="btnDisplayInfoCC3:" destination="f7l-3U-8EQ" eventType="touchUpInside" id="hVZ-19-7fg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC 3.0 Attributions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-iT-0Tc">
-                                <rect key="frame" x="16" y="385" width="288" height="22"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MqP-TS-c7O" firstAttribute="trailing" secondItem="t7o-bB-c6k" secondAttribute="trailing" constant="16" id="3fi-Ph-qkP"/>
+                            <constraint firstAttribute="bottom" secondItem="szw-iT-0Tc" secondAttribute="bottom" constant="161" id="3AX-r9-5mG"/>
+                            <constraint firstItem="t7o-bB-c6k" firstAttribute="top" secondItem="szw-iT-0Tc" secondAttribute="bottom" constant="17" id="3eb-Mx-riU"/>
                             <constraint firstItem="AYb-Ma-7QR" firstAttribute="leading" secondItem="MqP-TS-c7O" secondAttribute="leading" id="6aq-WE-xoY"/>
-                            <constraint firstItem="bns-a9-Re3" firstAttribute="leading" secondItem="MqP-TS-c7O" secondAttribute="leading" constant="16" id="9vZ-Fr-iIJ"/>
                             <constraint firstItem="pxi-66-igt" firstAttribute="bottom" secondItem="MqP-TS-c7O" secondAttribute="bottom" id="B0t-In-yjS"/>
-                            <constraint firstItem="MqP-TS-c7O" firstAttribute="bottom" secondItem="t7o-bB-c6k" secondAttribute="bottom" constant="85" id="LFZ-cn-XzF"/>
                             <constraint firstItem="pxi-66-igt" firstAttribute="top" secondItem="9j6-n2-6TQ" secondAttribute="top" id="LQ4-Ng-ZsZ"/>
-                            <constraint firstItem="MqP-TS-c7O" firstAttribute="bottom" secondItem="bns-a9-Re3" secondAttribute="bottom" constant="81" id="P8P-Zv-JMz"/>
                             <constraint firstItem="3iL-Ep-sPp" firstAttribute="leading" secondItem="MqP-TS-c7O" secondAttribute="leading" id="Q3D-So-9c4"/>
-                            <constraint firstItem="cxO-Of-qYR" firstAttribute="centerX" secondItem="9j6-n2-6TQ" secondAttribute="centerX" id="RbN-ke-Gf2"/>
                             <constraint firstItem="AYb-Ma-7QR" firstAttribute="trailing" secondItem="MqP-TS-c7O" secondAttribute="trailing" id="TBf-S4-rbY"/>
                             <constraint firstItem="3iL-Ep-sPp" firstAttribute="trailing" secondItem="MqP-TS-c7O" secondAttribute="trailing" id="ZTH-QS-fjW"/>
                             <constraint firstItem="pxi-66-igt" firstAttribute="leading" secondItem="MqP-TS-c7O" secondAttribute="leading" id="dQJ-wL-Cru"/>
                             <constraint firstItem="MqP-TS-c7O" firstAttribute="trailing" secondItem="szw-iT-0Tc" secondAttribute="trailing" constant="16" id="eaj-5Z-5s8"/>
                             <constraint firstItem="AYb-Ma-7QR" firstAttribute="top" secondItem="3iL-Ep-sPp" secondAttribute="bottom" id="iN9-Ie-u9n"/>
                             <constraint firstItem="szw-iT-0Tc" firstAttribute="leading" secondItem="MqP-TS-c7O" secondAttribute="leading" constant="16" id="lTf-qz-fEF"/>
-                            <constraint firstItem="cxO-Of-qYR" firstAttribute="top" secondItem="szw-iT-0Tc" secondAttribute="bottom" constant="16" id="oJQ-pq-LqI"/>
+                            <constraint firstItem="t7o-bB-c6k" firstAttribute="centerX" secondItem="9j6-n2-6TQ" secondAttribute="centerX" id="nCO-Tb-dnL"/>
                             <constraint firstItem="3iL-Ep-sPp" firstAttribute="top" secondItem="MqP-TS-c7O" secondAttribute="top" id="pkZ-zL-1TD"/>
                             <constraint firstItem="pxi-66-igt" firstAttribute="trailing" secondItem="MqP-TS-c7O" secondAttribute="trailing" id="rXm-bv-NDl"/>
-                            <constraint firstItem="MqP-TS-c7O" firstAttribute="bottom" secondItem="cxO-Of-qYR" secondAttribute="bottom" constant="81" id="ypn-Pf-0wb"/>
                             <constraint firstItem="szw-iT-0Tc" firstAttribute="top" secondItem="AYb-Ma-7QR" secondAttribute="bottom" constant="40" id="zpy-zg-v14"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MqP-TS-c7O"/>
@@ -486,7 +459,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password for Messages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-WY-lDY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password for Messages" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-WY-lDY">
                                 <rect key="frame" x="16" y="104" width="288" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -496,7 +469,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naviation Keys" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APv-xB-Ooi">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naviation Keys" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="APv-xB-Ooi">
                                 <rect key="frame" x="16" y="142" width="288" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -541,7 +514,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jat-Pl-7Wb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jat-Pl-7Wb">
                                 <rect key="frame" x="158" y="258" width="146" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -615,6 +588,17 @@ To Get more tips go to Jericojones.com/mymessages.
                                     <action selector="btnSaveCode:" destination="pOY-cA-fco" eventType="touchUpInside" id="8z5-Lm-hn8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-5N-8fh">
+                                <rect key="frame" x="262" y="506" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Qbx-rX-gWd"/>
+                                    <constraint firstAttribute="height" constant="42" id="r5U-vc-Ypq"/>
+                                </constraints>
+                                <state key="normal" image="info-1.png"/>
+                                <connections>
+                                    <action selector="btnShowHelp:" destination="pOY-cA-fco" eventType="touchUpInside" id="eMq-cX-DGx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -637,9 +621,11 @@ To Get more tips go to Jericojones.com/mymessages.
                             <constraint firstItem="Dwn-5X-Jyy" firstAttribute="leading" secondItem="XgE-4w-Ebc" secondAttribute="trailing" constant="31" id="XsO-qC-98r"/>
                             <constraint firstItem="tof-GK-Htk" firstAttribute="centerX" secondItem="ZMv-7u-0B2" secondAttribute="centerX" id="YHX-l6-LUy"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="APv-xB-Ooi" secondAttribute="trailing" constant="16" id="ZnM-Gi-vBo"/>
+                            <constraint firstItem="KKn-5N-8fh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="262" id="bHh-jb-dkW"/>
                             <constraint firstItem="tof-GK-Htk" firstAttribute="top" secondItem="5lX-lQ-v6q" secondAttribute="bottom" constant="22" id="bJX-Qa-oD4"/>
                             <constraint firstItem="CSU-HV-x3j" firstAttribute="leading" secondItem="tof-GK-Htk" secondAttribute="trailing" constant="13.5" id="bPm-XX-bOC"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="bottom" secondItem="fHE-bP-iQx" secondAttribute="bottom" id="bZy-d0-7Fo"/>
+                            <constraint firstItem="fHE-bP-iQx" firstAttribute="bottom" secondItem="KKn-5N-8fh" secondAttribute="bottom" constant="20" id="cBT-ES-3zZ"/>
                             <constraint firstItem="Xz0-WY-lDY" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="ckN-XF-dz1"/>
                             <constraint firstItem="kne-Rh-xun" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="enN-44-uCL"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="jat-Pl-7Wb" secondAttribute="trailing" constant="16" id="erf-wa-avk"/>
@@ -654,6 +640,7 @@ To Get more tips go to Jericojones.com/mymessages.
                             <constraint firstItem="Dwn-5X-Jyy" firstAttribute="top" secondItem="APv-xB-Ooi" secondAttribute="bottom" constant="8" id="mdb-Nb-fRN"/>
                             <constraint firstItem="jat-Pl-7Wb" firstAttribute="top" secondItem="nSS-Tx-HvP" secondAttribute="bottom" constant="8" id="mjV-2I-9QL"/>
                             <constraint firstItem="Dwn-5X-Jyy" firstAttribute="leading" secondItem="XgE-4w-Ebc" secondAttribute="trailing" constant="31" id="p6u-Y0-YoL"/>
+                            <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="KKn-5N-8fh" secondAttribute="trailing" constant="16" id="qdI-n9-dcN"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="jat-Pl-7Wb" secondAttribute="trailing" constant="16" id="qh4-ND-mid"/>
                             <constraint firstItem="3ky-Ek-8cw" firstAttribute="trailing" secondItem="fHE-bP-iQx" secondAttribute="trailing" id="qpv-4K-1h1"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CSU-HV-x3j" secondAttribute="trailing" constant="87" id="u9X-GB-x2P"/>
@@ -676,16 +663,17 @@ To Get more tips go to Jericojones.com/mymessages.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1v-0X-IPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="-389"/>
+            <point key="canvasLocation" x="1083.75" y="-389.78873239436621"/>
         </scene>
     </scenes>
     <resources>
         <image name="80pxPhone_Shiny_Icon.png" width="80" height="80"/>
         <image name="Icon-60.png" width="60" height="60"/>
         <image name="OperatorsBackground.png" width="375" height="667"/>
-        <image name="bin.png" width="64" height="64"/>
         <image name="btnEmpty-3.png" width="160" height="90"/>
-        <image name="information.png" width="64" height="64"/>
+        <image name="eraser-1.png" width="30" height="30"/>
+        <image name="info-1.png" width="30" height="30"/>
         <image name="pencil-2.png" width="30" height="30"/>
+        <image name="recycle-bin 1.png" width="30" height="30"/>
     </resources>
 </document>

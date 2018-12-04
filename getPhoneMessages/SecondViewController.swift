@@ -26,6 +26,16 @@ class SecondViewController: UIViewController {
         createKeyPadDoneKey()
     }
     
+    @IBAction func btnShowHelp(_ sender: Any) {
+        /*
+         Show help about this screen, instead of manually linking screen,
+         going to present and display text related to this screen.
+         */
+        let msgHelp = "This is command help text\n Yes that is right\n"
+        UserDefaults.standard.set(msgHelp, forKey: "helpText")
+        let next = storyboard?.instantiateViewController(withIdentifier: "infoWindow") as! InformationViewController
+        self.present(next, animated: true, completion: nil)
+    }
     
     @IBAction func btnBack(_ sender: Any) {
         UserDefaults.standard.set(nil, forKey: "newCode")

@@ -1,10 +1,5 @@
 ToDo
-Hide passcode if the user wants.
-correct when you go into info screen it automatically tries to call when it gets back into the previous screen.  Set a counter to see if that will stop that.
-Not only can you get into your messages, however you can add codes to get into different function, or delete messages you don't want to hear.  All you have to do is add a pause then a delete, the pause is to get past the delete message and the delete code to delete the messages.  What I want to do is create an interface
-    that will allow people to add codes to delete messages and a number of messages.
-
-Create a new screen where I can delete a number of saved messages, this should be used on the fly, so when the user just happens to think that want to delete a number of saved messages then can just enter the data one time and do it.  It should contain Access Code, codes to get to messages you want to delete, number of seconds it needs between deletes, default it to 4 seconds, and number of messages it wants deleted, and code to delete the messages.   Normally I would use this on my cell message, it will help get rid of a lot of unwanted messages.
+get icon for clear
 
 finished:
 got button helper class started
@@ -30,3 +25,14 @@ app icon <a href="https://www.freepik.com/free-photos-vectors/phone">Phone vecto
 blue icon <a href='https://www.freepik.com/free-vector/contact-icons-in-3d_831811.htm'>Designed by Layerace</a>
 yellow icon <a href="https://www.freepik.com/free-vector/yellow-phone-icon_810130.htm">Designed by Kreativkolors</a>
 created Help screen.
+added hide password
+changed pencil icon, changed colors to blue
+added text to let the user know what they are doing when they enter a macro.
+
+Create screen to make delete macros for messages.
+Not only can you get into your messages, however you can add codes to get into different function, or delete messages you don't want to hear.  All you have to do is add a pause then a delete, the pause is to get past the delete message and the delete code to delete the messages.  What I want to do is create an interface
+that will allow people to add codes to delete messages and a number of messages.
+
+Create a new screen where I can delete a number of saved messages, this should be used on the fly, so when the user just happens to think that want to delete a number of saved messages then can just enter the data one time and do it.  It should contain Access Code, codes to get to messages you want to delete, number of seconds it needs between deletes, default it to 4 seconds, and number of messages it wants deleted, and code to delete the messages.   Normally I would use this on my cell message, it will help get rid of a lot of unwanted messages.
+fixed:
+correct when you go into info screen it automatically tries to call when it gets back into the previous screen.  Set a counter to see if that will stop that.

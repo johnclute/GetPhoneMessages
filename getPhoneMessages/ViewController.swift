@@ -65,7 +65,6 @@ class ViewController: UIViewController {
     }
     
     
-
     @IBAction func btnClearText(_ sender: Any) {
         txtMessageCode.text = ""
         txtMessageNumber.text = ""
@@ -85,10 +84,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnAppInfo(_ sender: Any) {
+        /*
+         Display help information from main window.
+         Want to load help information into a userdefault, where the info screen will display that text.
+         */
+        UserDefaults.standard.set("Hi Bob\n and Jeff\n and Sara", forKey: "helpText")
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "infoWindow") as! InformationViewController
+        self.present(next, animated: true, completion: nil)
         
-    }
-    
-    @IBAction func btnCodeInfo(_ sender: Any) {
     }
     
     @IBAction func btnDeleteCallNumber(_ sender: Any) {

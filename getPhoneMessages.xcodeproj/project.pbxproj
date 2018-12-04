@@ -10,6 +10,9 @@
 		FD09B91D219CA5070062E5B7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09B91C219CA5070062E5B7 /* InformationViewController.swift */; };
 		FD0C4EFF21AF7253002EA245 /* pencil-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0C4EFE21AF7253002EA245 /* pencil-2.png */; };
 		FD0C4F0121AFA26D002EA245 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */; };
+		FD11446421B708B300861028 /* eraser-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD11446321B708B300861028 /* eraser-1.png */; };
+		FD11446621B70AAA00861028 /* info-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD11446521B70AAA00861028 /* info-1.png */; };
+		FD11446821B70CCA00861028 /* recycle-bin 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD11446721B70CCA00861028 /* recycle-bin 1.png */; };
 		FD1E148B218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */; };
 		FD1E148D218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */; };
 		FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */; };
@@ -18,9 +21,7 @@
 		FD1E14B1218C0BB800A26CCB /* btnMsg2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */; };
 		FD58D84F218CD10F0022CE80 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = FD58D84E218CD10F0022CE80 /* ToDo */; };
 		FD58D852218CD1D20022CE80 /* btnAux.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D850218CD1D20022CE80 /* btnAux.png */; };
-		FD58D853218CD1D20022CE80 /* bin.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D851218CD1D20022CE80 /* bin.png */; };
 		FD58D855218CD2AC0022CE80 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D854218CD2AC0022CE80 /* information.png */; };
-		FD58D857218CD6E90022CE80 /* btnDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = FD58D856218CD6E90022CE80 /* btnDelete.png */; };
 		FD58D859218CF6AC0022CE80 /* messageButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */; };
 		FD6D341B219CEECE003AC426 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6D341A219CEECE003AC426 /* Icon-60@3x.png */; };
 		FD8A03B32192206E0072A6D7 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A03B22192206E0072A6D7 /* utilities.swift */; };
@@ -56,6 +57,9 @@
 		FD09B91C219CA5070062E5B7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		FD0C4EFE21AF7253002EA245 /* pencil-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil-2.png"; sourceTree = "<group>"; };
 		FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FD11446321B708B300861028 /* eraser-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser-1.png"; sourceTree = "<group>"; };
+		FD11446521B70AAA00861028 /* info-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-1.png"; sourceTree = "<group>"; };
+		FD11446721B70CCA00861028 /* recycle-bin 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recycle-bin 1.png"; sourceTree = "<group>"; };
 		FD1E148A218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Phone_Shiny_Icon.svg.png"; sourceTree = "<group>"; };
 		FD1E148C218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80pxPhone_Shiny_Icon.png; sourceTree = "<group>"; };
 		FD1E14A8218C0B6800A26CCB /* btnEmpty-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnEmpty-3.png"; sourceTree = "<group>"; };
@@ -64,9 +68,7 @@
 		FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnMsg2-3.png"; sourceTree = "<group>"; };
 		FD58D84E218CD10F0022CE80 /* ToDo */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
 		FD58D850218CD1D20022CE80 /* btnAux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnAux.png; sourceTree = "<group>"; };
-		FD58D851218CD1D20022CE80 /* bin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bin.png; sourceTree = "<group>"; };
 		FD58D854218CD2AC0022CE80 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
-		FD58D856218CD6E90022CE80 /* btnDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnDelete.png; sourceTree = "<group>"; };
 		FD58D858218CF6AC0022CE80 /* messageButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageButtonHelper.swift; sourceTree = "<group>"; };
 		FD6D341A219CEECE003AC426 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		FD8A03B22192206E0072A6D7 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
@@ -115,12 +117,13 @@
 		FD1E1487218BBBBA00A26CCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FD11446521B70AAA00861028 /* info-1.png */,
+				FD11446721B70CCA00861028 /* recycle-bin 1.png */,
+				FD11446321B708B300861028 /* eraser-1.png */,
 				FD0C4EFE21AF7253002EA245 /* pencil-2.png */,
 				FD6D341A219CEECE003AC426 /* Icon-60@3x.png */,
 				FD58D854218CD2AC0022CE80 /* information.png */,
-				FD58D856218CD6E90022CE80 /* btnDelete.png */,
 				FDB3EB3921960E1100C639F6 /* OperatorsBackground.png */,
-				FD58D851218CD1D20022CE80 /* bin.png */,
 				FD58D850218CD1D20022CE80 /* btnAux.png */,
 				FD1E14B0218C0BB800A26CCB /* btnMsg2-3.png */,
 				FD1E14AE218C0B8600A26CCB /* btnAux-3.png */,
@@ -162,12 +165,12 @@
 				FD8A03B22192206E0072A6D7 /* utilities.swift */,
 				FDDB57002189631500E59E0B /* ViewController.swift */,
 				FD0C4F0021AFA26D002EA245 /* SecondViewController.swift */,
+				FD09B91C219CA5070062E5B7 /* InformationViewController.swift */,
 				FDDB57022189631500E59E0B /* Main.storyboard */,
 				FDDB57082189631700E59E0B /* Assets.xcassets */,
 				FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */,
 				FDDB570D2189631700E59E0B /* Info.plist */,
 				FDDB57052189631500E59E0B /* getPhoneMessages.xcdatamodeld */,
-				FD09B91C219CA5070062E5B7 /* InformationViewController.swift */,
 			);
 			path = getPhoneMessages;
 			sourceTree = "<group>";
@@ -294,12 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD58D853218CD1D20022CE80 /* bin.png in Resources */,
 				FD1E14AD218C0B7700A26CCB /* btnMsg1-3.png in Resources */,
 				FDB3EB3A21960E1100C639F6 /* OperatorsBackground.png in Resources */,
 				FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */,
+				FD11446621B70AAA00861028 /* info-1.png in Resources */,
 				FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */,
-				FD58D857218CD6E90022CE80 /* btnDelete.png in Resources */,
 				FD0C4EFF21AF7253002EA245 /* pencil-2.png in Resources */,
 				FD1E14AF218C0B8700A26CCB /* btnAux-3.png in Resources */,
 				FDDB57092189631700E59E0B /* Assets.xcassets in Resources */,
@@ -311,6 +313,8 @@
 				FD58D84F218CD10F0022CE80 /* ToDo in Resources */,
 				FDDB57042189631500E59E0B /* Main.storyboard in Resources */,
 				FD58D852218CD1D20022CE80 /* btnAux.png in Resources */,
+				FD11446821B70CCA00861028 /* recycle-bin 1.png in Resources */,
+				FD11446421B708B300861028 /* eraser-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,6 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
-
     @IBOutlet weak var instrTextView: UITextView!
     
     @IBAction func btnBack(_ sender: Any) {
@@ -32,17 +31,6 @@ class InformationViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 
-    @IBAction func btnDisplayInfoCC3(_ sender: Any) {
-        
-        let msg = "http://www.freepik.com from https://www.flaticon.com/ www.flaticon.com is licensed by  http://creativecommons.org/licenses/by/3.0/ Creative Commons BY 3.0"
-        showAlert(msg)
-    }
-
-    @IBAction func btnDisplayDeleteCC3(_ sender: Any) {
-        let msg = "http://www.freepik.com from https://www.flaticon.com/ www.flaticon.com is licensed by  http://creativecommons.org/licenses/by/3.0/ Creative Commons BY 3.0"
-        showAlert(msg)
-
-    }
     
     @IBAction func btnDisplayAppIconCC3(_ sender: Any) {
         let msg = "https://www.freepik.com/free-vector/yellow-phone-icon_810130.htm Designed by Kreativkolors"
@@ -52,6 +40,9 @@ class InformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let helpMsg = UserDefaults.standard.string(forKey: "helpText") {
+            instrTextView.text = helpMsg
+        }
         // Do any additional setup after loading the view.
     }
     
