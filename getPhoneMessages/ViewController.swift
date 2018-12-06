@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var selectedButton = 0
     var firstime = 0
     var hidePassword: Bool = true
+    let DEBUG_STATEMENT = 3
     
     @IBOutlet weak var txtMessageNumber: UITextField!
     
@@ -76,9 +77,11 @@ class ViewController: UIViewController {
     }
     
     func resizeScreenObjects(_ screenWidth: CGFloat, _ screenHeight: CGFloat ) {
-        print("X = \(screenWidth) Y = \(screenHeight)")
-        print("Label Field Height = \(CGFloat(CGFloat(statusRatio) * screenHeight))")
-        print("Label Origin Height = \(lblDisplayStatus.frame.height)")
+        if DEBUG_STATEMENT < 2 {
+            print("X = \(screenWidth) Y = \(screenHeight)")
+            print("Label Field Height = \(CGFloat(CGFloat(statusRatio) * screenHeight))")
+            print("Label Origin Height = \(lblDisplayStatus.frame.height)")
+        }
         
         lblDisplayStatus.frame = CGRect(x: lblDisplayStatus.frame.origin.x, y: lblDisplayStatus.frame.origin.y, width: lblDisplayStatus.frame.width, height: (CGFloat(statusRatio) * screenHeight))
     }
@@ -273,18 +276,24 @@ class ViewController: UIViewController {
         
         
         if swtchCallWhenStarted.isOn {
-            print("First Time - \(firstime)")
+            if DEBUG_STATEMENT < 2 {
+                print("First Time - \(firstime)")
+            }
             if self.firstime == 0 {
                 self.getMessage(self)
                 self.firstime += 1
-                print("First Time - \(firstime)")
+                if DEBUG_STATEMENT < 2 {
+                    print("First Time - \(firstime)")
+                }
 
             }
         }
         
         if let returnedCode: String = UserDefaults.standard.string(forKey: "newCode") {
             txtMessageCode.text = returnedCode
-            print("Return Value: \(returnedCode)")
+            if DEBUG_STATEMENT < 2 {
+                print("Return Value: \(returnedCode)")
+            }
             
         }
 
@@ -402,7 +411,9 @@ class ViewController: UIViewController {
             }
         }
         Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(clearDialStatus), userInfo: nil, repeats: false)
-        print ("\(phoneNumber),\(messCode)\n")
+        if DEBUG_STATEMENT < 2 {
+            print ("\(phoneNumber),\(messCode)\n")
+        }
         
     }
     
