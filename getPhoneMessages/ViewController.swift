@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
 
+    let helpText = "Main Screen\n My Messages calls your voicemail.  It is meant to make getting your voicemails easier. It calls the voicemail number and enters the code that gets you into your voicemail.  If you specify more commands it will take you to your saved messages as well and delete any number of saved messages if you desire.\n \n More information is available at Jericojones.com/mymessages and whatifapps.net/mymessages\n \n Screen Layout: starting from the top\n Text Field Message Status\n Displays all messages the app is sending to the user.\n\n Text Field - Phone number Entry Field\n Field where phone number for voicemail is entered.\n\n Text Field - Password for messages field, and entry command\n Voicemail password is entered here and command to listen to new messages.\n\n Button - Pencil, write code\n This takes the user to a second screen, in which the user can enter more complicated commands the app can perform.\n\n switch - Hide password,\n Does not show password, this is used if you don't want anybody viewing your phone password\n\n Switch - call when app opens \n When app starts this indicates the app will call the first voicemail entry automatically.\n\n Button - trash can\n Deletes the selected voicemail entry. This is used if you want to remove a phone number and replace the entry with a new item, or just remove it.\n\n Button - Phone\n Make call to voicemail, enter phone number and password. If any thing else is entered on line it will perform those actions.\n\n Button - Eraser\n Clears the screen, clears Phone number and Password code.\n\n Entry Buttons\n MSG1 - Home Msg.  Default entry, this number is called if call automatically switch is turned on.\n MSG2 - Second Msg.  Secondary voicemail entry.\n AUX - Misc.  Any other numbers you want to store there such as conference numbers and such.\n\n Information Button\n Displays a brief help for the main screen.\n"
     
     var buttonClass = [buttonHelper]()
     var selectedButton = 0
@@ -88,7 +89,8 @@ class ViewController: UIViewController {
          Display help information from main window.
          Want to load help information into a userdefault, where the info screen will display that text.
          */
-        UserDefaults.standard.set("Hi Bob\n and Jeff\n and Sara", forKey: "helpText")
+        
+        UserDefaults.standard.set(helpText, forKey: "helpText")
         let next = self.storyboard?.instantiateViewController(withIdentifier: "infoWindow") as! InformationViewController
         self.present(next, animated: true, completion: nil)
         

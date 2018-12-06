@@ -19,7 +19,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OperatorsBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="a11-JP-R0y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.41133201120000001" green="0.53641051049999999" blue="0.52956515550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password for Messages" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SHt-SY-WTb">
                                 <rect key="frame" x="16" y="131" width="250" height="30"/>
@@ -139,9 +139,9 @@
                                     <action selector="btnAppInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWv-84-Les"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYA-NO-6PJ">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYA-NO-6PJ">
                                 <rect key="frame" x="16" y="51.5" width="288" height="25"/>
-                                <color key="backgroundColor" red="0.57433213350000001" green="0.8229894432" blue="0.78684250519999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.90582746270000003" green="0.80396407839999995" blue="0.65874809030000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="a3d-xl-0I5"/>
                                 </constraints>
@@ -222,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90990734100341797" green="0.81076174974441528" blue="0.45055216550827026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="a11-JP-R0y" secondAttribute="bottom" id="0al-MU-MX5"/>
                             <constraint firstItem="VvR-pD-toZ" firstAttribute="leading" secondItem="yKp-pW-ifR" secondAttribute="trailing" constant="16" id="4OF-OC-f0k"/>
@@ -330,62 +330,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYb-Ma-7QR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYb-Ma-7QR">
                                 <rect key="frame" x="0.0" y="64" width="320" height="281"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.51957917939999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">My VoiceMail
-
-My Voicemail app calls your land line voicemail with out manually entering your access code.  You can also use this app to dial into conference calls.  
-
-When My Messages start,  you can have it automatically call the default land line voice mail number, which is the first Msg1, by selecting get messages when starting app switch.  If you elect not to automatically get messages, then to get a message, press the either, Msg1, Msg2 or Aux.  Press the green phone button, it will dial the number and automatically enter your Code or PIN, and start you with retrieving your messages.
-
-This app is consists of 3 parts, 
-	1.	Text fields that display Phone numbers and Message pass code.  a Dial button, (Green Phone)
-	2.	Buttons that contain 3 stored phone numbers and message codes.
-	3.	Buttons to delete phone numbers and codes from selected stored phone number button, and clear the screen.
-
-Special Characters,
-	* - Cause voicemail greeting to stop, allowing user to enter access code or pin
-	# - Enter, this can be entered after entering a code or number, to accept entry
-	, = Pause 2 second 
-           ; - wait for dial to finish. forces you to manually enter in access code.
-
-The information button displays this screen and licensing information pertaining to the graphics used by this app.
-This informations is displayed when you press the button at the bottom of this screen.
-	
-Setup a app to retrieve a voicemail
-Enter voicemail phone number in phone number text field, top field
-Enter code directly underneath phone number, 
-   in this field you can enter the code.  The code is preceded by the * and a pause if desired followed by a code or pin.
-either press the dial key 
-If this is a common number press an empty message slot, this saves the number in the pressed message button slot.
-The first slot Msg1 is the default slot, this number is used when automatically calling voicemail.  
-It is the number also that is placed in the Number and Code text  fields when the app starts.
-
-if you have a voicemail number entered and saved 
-press msg button holding the voicemail info, it gets displayed into the phone and code textfields.
-The text next to the button will say it has been selected.
-press the dial button, 
-confirm call when popup displays
-retrieve messages.
-
-Delete a number
-select a number, the text next to the button will say it has been selected 
-press the trash can, delete key 
-this will remove the phone number information.
-Now a new number and code can be placed in this message location.
-
-NOTE - if you change a number or code, in a text field and press a slot that contains a number, this will not replace the information, instead it overwrites the changes you made with the number you saved in that slot.  The only way to modify a number is to delete it, then reenter the information and store it in the just deleted slot or a new one.
-To Get more tips go to Jericojones.com/mymessages.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <color key="backgroundColor" red="0.75" green="0.75" blue="0.75" alpha="1" colorSpace="deviceRGB"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC 3.0 Attributions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-iT-0Tc">
@@ -406,7 +354,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90990734100341797" green="0.81076174974441528" blue="0.45055216550827026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="szw-iT-0Tc" secondAttribute="bottom" constant="161" id="3AX-r9-5mG"/>
                             <constraint firstItem="t7o-bB-c6k" firstAttribute="top" secondItem="szw-iT-0Tc" secondAttribute="bottom" constant="17" id="3eb-Mx-riU"/>
@@ -569,7 +517,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.91372549020000005" green="0.0" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnCancelCode:" destination="pOY-cA-fco" eventType="touchUpInside" id="fVA-qy-qfa"/>
@@ -600,7 +548,7 @@ To Get more tips go to Jericojones.com/mymessages.
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90990734100341797" green="0.81076174974441528" blue="0.45055216550827026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yES-Qj-ipq" firstAttribute="leading" secondItem="fHE-bP-iQx" secondAttribute="leading" constant="16" id="3de-Hy-Xes"/>
                             <constraint firstItem="fHE-bP-iQx" firstAttribute="trailing" secondItem="Dwn-5X-Jyy" secondAttribute="trailing" constant="18" id="9rO-Ti-YCS"/>

@@ -1,5 +1,5 @@
 ToDo
-get icon for clear
+create help text for main screen and cmd screen.
 
 finished:
 got button helper class started
@@ -36,3 +36,6 @@ that will allow people to add codes to delete messages and a number of messages.
 Create a new screen where I can delete a number of saved messages, this should be used on the fly, so when the user just happens to think that want to delete a number of saved messages then can just enter the data one time and do it.  It should contain Access Code, codes to get to messages you want to delete, number of seconds it needs between deletes, default it to 4 seconds, and number of messages it wants deleted, and code to delete the messages.   Normally I would use this on my cell message, it will help get rid of a lot of unwanted messages.
 fixed:
 correct when you go into info screen it automatically tries to call when it gets back into the previous screen.  Set a counter to see if that will stop that.
+removed 2 images, bin and info,
+added an erase button,
+added a routine to present the information window, as well as passing text to be presented to the main text view.

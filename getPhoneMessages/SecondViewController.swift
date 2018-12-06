@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    let helpText = "Second Screen\n Create a Command\n Sometimes you need to do more then just go into voicemail, this screen allows you to enter more complicated commands, such as deleting several unwanted voicemails, or enter commands to go into a conference call.\n\n Button - Back\n Returns to Main Screen\n\n Text Field - Password entry\n Enter access code to voicemail account\n\n Text Field - Navigation Keys\n Telephone key number to navigate to different menus of the voicemail, Ie in Verizon 1 goes to saved messages.\n\n Switch - Welcome Message Delay\n When turned on, this causes a delay of 6 seconds allowing the welcome message to play indicating what options are available and is ready to accept key entry\n\n Text Field - Delay between messages\n Indicates the number of seconds the user wants to wait before performing an action.  For example if you want to delete a message a 4 second delay is needed to allow the delete message play before you can delete another message.\n\n Text Field - Action sequence\n This is the action the user wants to perform, such as delete a messages. Verizon used 7 for deleting saved messages.\n\n Text Field - Repeat how many times\n This is the number of times you want to repeat an action(s). Lets say you want to delete 77 voicemails, you would enter 77. If you want to display 1 action command enter 1 in the Repeat field, 0 - will not display the action sequences.\n\n Button - Cancel\n Delete all entries and go back to main screen\n\n Button - Accept\n Save all entries and place this information in the Password field.\n\n Button - Information\n Display Brief information about this screen."
+    
     @IBOutlet weak var txtAccessCode: UITextField!
     @IBOutlet weak var txtNavKeys: UITextField!
     @IBOutlet weak var txtSecDelay: UITextField!
@@ -31,7 +33,7 @@ class SecondViewController: UIViewController {
          Show help about this screen, instead of manually linking screen,
          going to present and display text related to this screen.
          */
-        let msgHelp = "This is command help text\n Yes that is right\n"
+        let msgHelp = helpText
         UserDefaults.standard.set(msgHelp, forKey: "helpText")
         let next = storyboard?.instantiateViewController(withIdentifier: "infoWindow") as! InformationViewController
         self.present(next, animated: true, completion: nil)
