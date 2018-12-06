@@ -1,4 +1,5 @@
 ToDo
+comment out prints with debug classification statements
 
 finished:
 got button helper class started
@@ -42,3 +43,4 @@ changed background of app
 added glasses image to show and hide password
 added circle with x in it to clear screen
 create help text for main screen and cmd screen.
+fixed text and size in info text field.
