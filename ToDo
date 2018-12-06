@@ -1,5 +1,4 @@
 ToDo
-create help text for main screen and cmd screen.
 
 finished:
 got button helper class started
@@ -39,3 +38,7 @@ correct when you go into info screen it automatically tries to call when it gets
 removed 2 images, bin and info,
 added an erase button,
 added a routine to present the information window, as well as passing text to be presented to the main text view.
+changed background of app
+added glasses image to show and hide password
+added circle with x in it to clear screen
+create help text for main screen and cmd screen.

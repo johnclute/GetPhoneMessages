@@ -34,6 +34,9 @@
 		FDDB570C2189631700E59E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDB570A2189631700E59E0B /* LaunchScreen.storyboard */; };
 		FDDB57172189631700E59E0B /* getPhoneMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57162189631700E59E0B /* getPhoneMessagesTests.swift */; };
 		FDDB57222189631700E59E0B /* getPhoneMessagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB57212189631700E59E0B /* getPhoneMessagesUITests.swift */; };
+		FDE67E5B21B8DA9D00EE815D /* glassesb-w.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE67E5921B8DA9D00EE815D /* glassesb-w.png */; };
+		FDE67E5C21B8DA9D00EE815D /* glassesColor.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE67E5A21B8DA9D00EE815D /* glassesColor.png */; };
+		FDE67E6021B8E7B400EE815D /* newCircleCancel.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE67E5F21B8E7B400EE815D /* newCircleCancel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		FDDB571D2189631700E59E0B /* getPhoneMessagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getPhoneMessagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDB57212189631700E59E0B /* getPhoneMessagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPhoneMessagesUITests.swift; sourceTree = "<group>"; };
 		FDDB57232189631700E59E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE67E5921B8DA9D00EE815D /* glassesb-w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glassesb-w.png"; sourceTree = "<group>"; };
+		FDE67E5A21B8DA9D00EE815D /* glassesColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glassesColor.png; sourceTree = "<group>"; };
+		FDE67E5F21B8E7B400EE815D /* newCircleCancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newCircleCancel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		FD1E1487218BBBBA00A26CCB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FDE67E5F21B8E7B400EE815D /* newCircleCancel.png */,
+				FDE67E5921B8DA9D00EE815D /* glassesb-w.png */,
+				FDE67E5A21B8DA9D00EE815D /* glassesColor.png */,
 				FD11446521B70AAA00861028 /* info-1.png */,
 				FD11446721B70CCA00861028 /* recycle-bin 1.png */,
 				FD11446321B708B300861028 /* eraser-1.png */,
@@ -297,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE67E5C21B8DA9D00EE815D /* glassesColor.png in Resources */,
 				FD1E14AD218C0B7700A26CCB /* btnMsg1-3.png in Resources */,
 				FDB3EB3A21960E1100C639F6 /* OperatorsBackground.png in Resources */,
 				FD1E14A9218C0B6800A26CCB /* btnEmpty-3.png in Resources */,
@@ -307,6 +317,7 @@
 				FDDB57092189631700E59E0B /* Assets.xcassets in Resources */,
 				FD6D341B219CEECE003AC426 /* Icon-60@3x.png in Resources */,
 				FD1E148D218BBED400A26CCB /* 80pxPhone_Shiny_Icon.png in Resources */,
+				FDE67E5B21B8DA9D00EE815D /* glassesb-w.png in Resources */,
 				FD1E14B1218C0BB800A26CCB /* btnMsg2-3.png in Resources */,
 				FD1E148B218BBE3400A26CCB /* 200px-Phone_Shiny_Icon.svg.png in Resources */,
 				FD58D855218CD2AC0022CE80 /* information.png in Resources */,
@@ -314,6 +325,7 @@
 				FDDB57042189631500E59E0B /* Main.storyboard in Resources */,
 				FD58D852218CD1D20022CE80 /* btnAux.png in Resources */,
 				FD11446821B70CCA00861028 /* recycle-bin 1.png in Resources */,
+				FDE67E6021B8E7B400EE815D /* newCircleCancel.png in Resources */,
 				FD11446421B708B300861028 /* eraser-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
